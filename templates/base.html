@@ -14,7 +14,7 @@
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                 <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
                     <img class="header__img" src="{{ url_for('static', filename='img/логоробко.png') }}" alt="">
-                        <use xlink:href="#bootstrap"></use>
+                    <use xlink:href="#bootstrap"></use>
                     </svg>
                 </a>
 
@@ -22,6 +22,10 @@
                     <li><a href="{{ url_for('index') }}" class="nav-link px-2 text-secondary">Главная</a></li>
                     <li><a href="{{ url_for('create') }}" class="nav-link px-2 text-white">Добавить запись</a></li>
                     <li><a href="{{ url_for('posts') }}" class="nav-link px-2 text-white">Все записи</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Регистрация</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Логин</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Аккаунт</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Выход</a></li>
                 </ul>
 
                 <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
@@ -36,12 +40,19 @@
             </div>
         </div>
     </header>
-    {% block content %}{% endblock %}
 
-    {% block main_page %}{% endblock %}
-
-    {% block footer %}{% endblock %}
 </div>
 
+<div class="content">
+{% block content %}{% endblock %}
+</div>
+
+
+{% block main_page %}{% endblock %}
+
+<footer class="footer">
+    Все права защищены!<br>
+    &#169; Robko2400 2024
+</footer>
 </body>
 </html>
