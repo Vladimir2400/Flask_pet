@@ -22,10 +22,7 @@
                     <li><a href="{{ url_for('index') }}" class="nav-link px-2 text-secondary">Главная</a></li>
                     <li><a href="{{ url_for('create') }}" class="nav-link px-2 text-white">Добавить запись</a></li>
                     <li><a href="{{ url_for('posts') }}" class="nav-link px-2 text-white">Все записи</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Регистрация</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Логин</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Аккаунт</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Выход</a></li>
+                    <li><a href="{{ url_for('contact') }}" class="nav-link px-2 text-white">Обратная связь</a></li>
                 </ul>
 
                 <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
@@ -34,8 +31,8 @@
                 </form>
 
                 <div class="text-end">
-                    <button type="button" class="btn btn-outline-light me-2">Login</button>
-                    <button type="button" class="btn btn-warning">Sign-up</button>
+                    <a href="{{ url_for('login') }}"><button type="button" class="btn btn-outline-light me-2">Войти</button></a>
+                    <a href="{{ url_for('register')}}"><button type="button" class="btn btn-warning">Регистрация</button></a>
                 </div>
             </div>
         </div>

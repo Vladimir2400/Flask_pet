@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Регистрация{% endblock %}
+
+{% block content %}
+<h1>Регистрация</h1>
+<form action="" method="post" class="form-contact">
+<p><label>Имя: </label><input type="text" name="name" value="" required />
+<p><label>Возраст: </label><input type="number" name="old" value="" required />
+<p><label>Город: </label><input type="text" name="city" value="" required />
+<p><label>Email: </label><input type="text" name="email" value="" required />
+<p><label>Пароль: </label><input type="password" name="password" value="" required />
+<p><label>Повторите пароль: </label><input type="password" name="password2" value="" required />
+<p><input type="submit" value="Зарегистрироваться" />
+</form>
+{% endblock %}
